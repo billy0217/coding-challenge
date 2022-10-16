@@ -1,0 +1,10 @@
+.c-card {
+	display: block;
+	padding: 15px;
+	box-shadow: 0 0 5px #ccc;
+	border-radius: 5px;
+}
+
+.c-card div {
+	margin-bottom: 5px;
+}
