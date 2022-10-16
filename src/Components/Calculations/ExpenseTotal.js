@@ -3,7 +3,8 @@ import {totalAmount, numberFormat} from '../../Functions/Funtions';
 
 function ExpenseTotal(props) {
 	const data = props.account;
-	const totalValue =  totalAmount(data, "total_value");
+	// get expense total value
+	const totalValue =  data.length ? totalAmount(data, "total_value"): 0;
 
 	return (
 		<div data-testid="expense_total">Expense: {numberFormat('en-AU', 'AUD', totalValue)}</div>

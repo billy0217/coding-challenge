@@ -2,6 +2,9 @@ import data from "./data/data.json";
 import List from "./Components/List/List";
 import RevenueTotal from "./Components/Calculations/RevenueTotal";
 import ExpenseTotal from "./Components/Calculations/ExpenseTotal";
+import GrossProfitMargin from "./Components/Calculations/GrossProfitMargin";
+import NetProfitMargin from "./Components/Calculations/NetProfitMargin";
+import WorkingCapitalRatio from "./Components/Calculations/WorkingCapitalRatio";
 
 function App() {
 
@@ -22,7 +25,11 @@ function App() {
           })
         } */}
         <RevenueTotal account={revenueData}/>
-        <ExpenseTotal account={revenueData}/>
+        <ExpenseTotal account={expenseData}/>
+        <GrossProfitMargin account={accountData} />
+        <NetProfitMargin account={accountData}/>
+        <WorkingCapitalRatio account={accountData} />
+
     </div>
   );
 }
