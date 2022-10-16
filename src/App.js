@@ -1,5 +1,4 @@
 import data from "./data/data.json";
-import List from "./Components/List/List";
 import RevenueTotal from "./Components/Calculations/RevenueTotal";
 import ExpenseTotal from "./Components/Calculations/ExpenseTotal";
 import GrossProfitMargin from "./Components/Calculations/GrossProfitMargin";
@@ -16,14 +15,6 @@ function App() {
 
   return (
     <div className="App">
-        {/* {
-          accountData?.map((info) => {
-            return (
-              <List account={info} key={info.account_identifier}/>
-            )
-            
-          })
-        } */}
         <RevenueTotal account={revenueData}/>
         <ExpenseTotal account={expenseData}/>
         <GrossProfitMargin account={accountData} />
